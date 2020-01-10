@@ -48,7 +48,7 @@ stat_level: {
 }
 })
 
-app.post('/users', (req, res) => {
+app.get('/users', (req, res) => {
     console.log(req.query);
     const user = new User(req.query)
 
